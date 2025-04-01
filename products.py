@@ -1,6 +1,6 @@
 class Product:
 	"""Represents a product with a name, price, quantity, and active status."""
-	def __init__(self, name, price, quantity):
+	def __init__(self, name:str, price:float, quantity:int):
 		"""Initializes a new product instance and raises ValueError if invalid."""
 		if not name or price < 0 or quantity < 0:
 			raise ValueError("Invalid product attributes")
